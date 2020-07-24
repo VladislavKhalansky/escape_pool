@@ -49,7 +49,7 @@ class Chaser:
         self.point = Point(x, y, _speed)
 
     def move_set(self, size, right):
-        """ Движение по или против часовой стрелки. mode == left/right """
+        """ Движение по или против часовой стрелки. Вправо, если right=True. """
         if right:
             if self.point.x == size and self.point.y < size:
                 self.point.y += self.point.speed
